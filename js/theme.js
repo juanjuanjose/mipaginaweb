@@ -1,7 +1,3 @@
-/////////////////////////////////////////////////////////////////////
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-/////////////////////////////////////////////////////////////////////
-
 $('.page-scroll').bind('click', function(event) {
     var $anchor = $(this);
     $('html, body').stop().animate({
@@ -11,10 +7,6 @@ $('.page-scroll').bind('click', function(event) {
 });
 
 
-
-////////////////////////////////////////////////////////////////////////
-// On-Scroll Animated Header: https://github.com/codrops/AnimatedHeader
-////////////////////////////////////////////////////////////////////////
 
 var cbpAnimatedHeader = (function() {
 
@@ -53,10 +45,6 @@ var cbpAnimatedHeader = (function() {
 
 
 
-//////////////////////////////////////////////
-// Highlight the top nav as scrolling occurs
-//////////////////////////////////////////////
-
 $('body').scrollspy({
     target: '.navbar',
     offset: 65
@@ -64,21 +52,12 @@ $('body').scrollspy({
 
 
 
-///////////////////////////////////////////
-// Display loading image while page loads
-///////////////////////////////////////////
-
 // Wait for window load
 $(window).load(function() {
     // Animate loader off screen
     $(".page-loader").fadeOut("slow");
 });
 
-
-
-////////////////////////////////////////////////////
-// OWL Carousel: http://owlgraphic.com/owlcarousel
-////////////////////////////////////////////////////
 
 // Intro text carousel
 $("#owl-intro-text").owlCarousel({
@@ -91,7 +70,7 @@ $("#owl-intro-text").owlCarousel({
 })
 
 
-// Partner carousel
+
 $("#owl-partners").owlCarousel({
     items : 4,
     itemsDesktop : [1199,3],
@@ -110,9 +89,6 @@ $("#owl-testimonial").owlCarousel({
 })
 
 
-////////////////////////////////////////////////////////////////////
-// Stellar (parallax): https://github.com/markdalgleish/stellar.js
-////////////////////////////////////////////////////////////////////
 
 $.stellar({
     // Set scrolling to be in either one or both directions
@@ -122,17 +98,12 @@ $.stellar({
 
 
 
-///////////////////////////////////////////////////////////
-// WOW animation scroll: https://github.com/matthieua/WOW
-///////////////////////////////////////////////////////////
 
 new WOW().init();
 
 
 
-////////////////////////////////////////////////////////////////////////////////////////////
-// Counter-Up (requires jQuery waypoints.js plugin): https://github.com/bfintal/Counter-Up
-////////////////////////////////////////////////////////////////////////////////////////////
+
 
 $('.counter').counterUp({
     delay: 10,
